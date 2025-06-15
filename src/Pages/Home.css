@@ -1,0 +1,82 @@
+/* Background gradient animation on the full page */
+.home-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(-45deg, #3b82f6, #10b981, #f97316, #3b82f6);
+  background-size: 600% 600%;
+  animation: gradientFlow 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header text styles */
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* Row layout for the project buttons */
+.button-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Wrapper for each button (now 2x larger) */
+.button-wrapper {
+  position: relative;
+  width: 600px;   /* doubled from 300px */
+  height: 360px;  /* doubled from 180px */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background: #222; /* fallback */
+}
+
+/* Background video that fills the button */
+.button-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Button styles over video */
+.button-wrapper button {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* lighter overlay */
+  color: white;
+  font-size: 2rem;  /* larger font size for bigger buttons */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+/* Button hover effect */
+.button-wrapper button:hover {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Background animation keyframes */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
