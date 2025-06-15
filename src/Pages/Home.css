@@ -32,9 +32,8 @@
   width: 600px;   /* doubled from 300px */
   height: 360px;  /* doubled from 180px */
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  background: #222; /* fallback */
+  
+ 
 }
 
 /* Background video that fills the button */
@@ -57,16 +56,13 @@
   font-size: 2rem;  /* larger font size for bigger buttons */
   font-weight: bold;
   border: none;
-  cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(2px);
+ 
+ 
+  
 }
 
 /* Button hover effect */
-.button-wrapper button:hover {
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-}
+
 
 /* Background animation keyframes */
 @keyframes gradientFlow {
