@@ -75,7 +75,7 @@ const Home: React.FC = () => {
         >
           <video
             ref={awsVideoRef}
-            className="button-video"
+            className="button-video aws-bright"
             src="/AWS.mp4"
             muted
             loop

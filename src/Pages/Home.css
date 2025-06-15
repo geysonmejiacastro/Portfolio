@@ -61,7 +61,9 @@
   
 }
 
-/* Button hover effect */
+.aws-bright {
+  filter: brightness(2.3); /* 1 = normal, >1 = brighter */
+}
 
 
 /* Background animation keyframes */
