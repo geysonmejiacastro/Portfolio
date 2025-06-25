@@ -1,0 +1,82 @@
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 70%; /* or set a fixed width */
+  padding: 0 2rem;
+  background-color: whitesmoke;
+  border-radius: 999px; /* pill/capsule effect */
+  margin: 2rem auto;     /* center horizontally */
+}
+
+
+/* Left: Home link */
+.nav-left,
+.nav-right {
+  flex: 1; /* equal space on left and right */
+  display: flex;
+  align-items: center;
+}
+
+.Home {
+  font-size: 1.8rem;
+  font-weight: bold;
+  
+}
+
+/* Center nav links */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-center a {
+  
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  position: relative;
+  border-radius: 5px;
+}
+
+/* Active link RGB underline */
+.nav-center a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 300%;
+  animation: rgb-glow 4s linear infinite;
+  border-radius: 2px;
+}
+
+.nav-center a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rgb-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
