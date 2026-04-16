@@ -37,6 +37,7 @@ const Home: React.FC = () => {
         <div className="CertGrid">
           <img src="/ITF.png" alt="ITF Certification" />
           <img src="/A+.png" alt="A+ Certification" />
+          <img src ="Security.png" alt="Security+ Certification" />
         </div>
       </div>
     </div>
