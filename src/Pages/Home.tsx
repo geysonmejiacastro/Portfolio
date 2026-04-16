@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             playsInline
             preload="auto"
           />
-          <button onClick={() => navigate('/IT')}>IT Professional</button>
+          <button onClick={() => navigate('/it')}>IT Professional</button>
         </div>
 
         {/* Web Developer Button */}
