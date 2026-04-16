@@ -67,6 +67,8 @@ const Resume: React.FC = () => {
         <ul className="pill-list">
           <li className="pill">CompTIA A+</li>
           <li className="pill">CompTIA ITF+</li>
+           <li className="pill">CompTIA Security+</li>
+
         </ul>
       </section>
 
