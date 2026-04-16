@@ -11,15 +11,16 @@ const Resume: React.FC = () => {
       <section>
         <h2 className="section-heading">Experience</h2>
         <div className="entry">
-          <h3>IT Intern - DOE ( August/01/2025 - July/28/2026)</h3>
+          <h3>IT Intern - DOE (August 1, 2025 - July 28, 2026)</h3>
           <ul>
             <li>Provided technical support for Windows and Mac systems.</li>
             <li>Troubleshot hardware, software, and network issues for end-users.</li>
             <li>Assisted with network configuration, including VLANs and QoS.</li>
-            <li>Gained experience with Active Directory</li>
-            <li>troubleshoot printer connection issues</li>
+            <li>Gained experience with Active Directory.</li>
+            <li>Troubleshot printer connection issues.</li>
           </ul>
         </div>
+        <div className="entry">
           <h3>Web Developer Intern – EverGreen Investment (Mar 2025 – May 2025)</h3>
           <ul>
             <li>Built a full-stack website using React and PostgreSQL.</li>
@@ -27,15 +28,15 @@ const Resume: React.FC = () => {
             <li>Worked with REST APIs, UI components, and DevOps fundamentals.</li>
             <li>Implemented user authentication with JWT and OAuth protocols.</li>
           </ul>
-
-          <h3>Ichiran - Staff (October/10/2022 - present) </h3>
+        </div>
+        <div className="entry">
+          <h3>Ichiran - Staff (October 10, 2022 - present)</h3>
           <ul>
             <li>Provided excellent customer service in a fast-paced environment.</li>
             <li>Managed inventory and cash handling with accuracy.</li>
             <li>Collaborated with team members to ensure smooth operations.</li>
-            <li> Troubleshooted POS printer issues.</li>
+            <li>Troubleshot POS printer issues.</li>
           </ul>
-          
         </div>
       </section>
 
